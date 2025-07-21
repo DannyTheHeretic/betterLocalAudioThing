@@ -17,6 +17,7 @@
     "homepage": "https://github.com/DannyTheHeretic/betterLocalAudioThing",
     "repository": "https://github.com/DannyTheHeretic/betterLocalAudioThing",
     "template": "base",
+    "postinstall": true,
     "tags": [
         "audiosource"
     ],

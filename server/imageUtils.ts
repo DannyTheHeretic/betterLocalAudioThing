@@ -51,7 +51,7 @@ const downloadImage = async (url: string, fileName: string): Promise<string | un
             await pipelineAsync(response.body as any, fileStream);
             
             console.log(`Successfully downloaded image: ${fileName}.${fileExtension}`);
-            return `/resource/image/audio/${fileName}.${fileExtension}`;
+            return `/resource/image/better-local-audio/${fileName}.${fileExtension}`;
         } else {
             console.error('No response body received');
             return;
@@ -83,7 +83,7 @@ const handleLocalFile = async (fileUrl: string, fileName: string, imagesDir: str
         await fs.copyFile(localPath, targetPath);
         
         console.log(`Successfully copied local file: ${fileName}.${fileExtension}`);
-        return `/resource/image/audio/${fileName}.${fileExtension}`;
+        return `/resource/image/better-local-audio/${fileName}.${fileExtension}`;
         
     } catch (error) {
         console.error(`Failed to handle local file: ${error instanceof Error ? error.message : 'Unknown error'}`);
@@ -116,7 +116,7 @@ const saveBase64Image = async (base64Image: string, fileName: string): Promise<s
                 return;
             }
             console.log(`Successfully saved base64 image: ${fileName}.${fileExtension}`);
-            resolve(`/resource/image/audio/${fileName}.${fileExtension}`);
+            resolve(`/resource/image/better-local-audio/${fileName}.${fileExtension}`);
         });
     });
 }
@@ -136,7 +136,7 @@ const saveBinaryImage = async (binaryData: string, fileName: string): Promise<st
                 return;
             }
             console.log(`Successfully saved binary image: ${fileName}.${fileExtension}`);
-            resolve(`/resource/image/audio/${fileName}.${fileExtension}`);
+            resolve(`/resource/image/better-local-audio/${fileName}.${fileExtension}`);
         });
     });
 }
