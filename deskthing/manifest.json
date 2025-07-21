@@ -2,7 +2,7 @@
     "id": "better-local-audio",
     "requires": [],
     "label": "Better Local Audio",
-    "version": "v1.0.2",
+    "version": "1.0.2",
     "description": "A cross-platform audio app that lets you control any locally playing music",
     "author": "DannyTheHeretic",
     "platforms": [
@@ -17,6 +17,7 @@
     "homepage": "https://github.com/DannyTheHeretic/betterLocalAudioThing",
     "repository": "https://github.com/DannyTheHeretic/betterLocalAudioThing",
     "template": "base",
+    "postinstall": true,
     "tags": [
         "audiosource"
     ],
