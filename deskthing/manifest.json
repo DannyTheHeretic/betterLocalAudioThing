@@ -1,0 +1,28 @@
+{
+    "id": "bla-audio",
+    "requires": [],
+    "label": "Better Local Audio",
+    "version": "1.0.1",
+    "description": "A cross-platform audio app that lets you control any locally playing music",
+    "author": "DannyTheHeretic",
+    "platforms": [
+        "windows",
+        "linux",
+        "mac",
+        "mac64",
+        "macarm",
+        "arm64",
+        "x64"
+    ],
+    "homepage": "https://github.com/DannyTheHeretic/betterLocalAudioThing",
+    "repository": "https://github.com/DannyTheHeretic/betterLocalAudioThing",
+    "template": "base",
+    "tags": [
+        "audiosource"
+    ],
+    "requiredVersions": {
+        "server": ">=0.11.13",
+        "client": ">=0.11.2"
+    },
+    "updateUrl": "https://github.com/DannyTheHeretic/betterLocalAudioThing"
+}
