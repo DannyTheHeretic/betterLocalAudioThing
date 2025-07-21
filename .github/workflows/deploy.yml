@@ -34,3 +34,4 @@ jobs:
         with:
           files: |
             better-local-audio-${{ github.event.release.tag_name }}.zip
+            dist/latest.json
